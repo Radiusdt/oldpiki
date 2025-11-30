@@ -1,0 +1,351 @@
+<dictionaries>
+
+<dictionary>
+    <name>ssp_geo_region</name>
+
+    <source>
+        <mysql>
+            <replica>
+                <host>db_mysql</host>
+                <priority>1</priority>
+            </replica>
+            <port>3306</port>
+            <user>project</user>
+            <password>alei4ubweiptcuyner</password>
+            <db>project</db>
+            <table>geo_region</table>
+        </mysql>
+    </source>
+
+    <lifetime>
+        <min>300</min>
+        <max>360</max>
+    </lifetime>
+
+    <layout>
+        <hashed />
+    </layout>
+
+    <structure>
+        <id>
+            <name>id</name>
+        </id>
+
+        <attribute>
+            <name>name_ru</name>
+            <type>String</type>
+            <null_value></null_value>
+        </attribute>
+        <attribute>
+            <name>name_en</name>
+            <type>String</type>
+            <null_value></null_value>
+        </attribute>
+        <attribute>
+            <name>country_id</name>
+            <type>Int32</type>
+            <null_value>0</null_value>
+        </attribute>
+    </structure>
+</dictionary>
+
+<dictionary>
+    <name>ssp_source</name>
+
+    <source>
+        <mysql>
+            <replica>
+                <host>db_mysql</host>
+                <priority>1</priority>
+            </replica>
+            <port>3306</port>
+            <user>project</user>
+            <password>alei4ubweiptcuyner</password>
+            <db>project</db>
+            <table>source</table>
+        </mysql>
+    </source>
+
+    <lifetime>
+        <min>300</min>
+        <max>360</max>
+    </lifetime>
+
+    <layout>
+        <flat />
+    </layout>
+
+    <structure>
+        <id>
+            <name>id</name>
+        </id>
+
+        <attribute>
+            <name>name</name>
+            <type>String</type>
+            <null_value></null_value>
+        </attribute>
+    </structure>
+</dictionary>
+
+<dictionary>
+    <name>ssp_operator</name>
+
+    <source>
+        <mysql>
+            <replica>
+                <host>db_mysql</host>
+                <priority>1</priority>
+            </replica>
+            <port>3306</port>
+            <user>project</user>
+            <password>alei4ubweiptcuyner</password>
+            <db>project</db>
+            <table>mobile_operator</table>
+        </mysql>
+    </source>
+
+    <lifetime>
+        <min>300</min>
+        <max>360</max>
+    </lifetime>
+
+    <layout>
+        <flat />
+    </layout>
+
+    <structure>
+        <id>
+            <name>id</name>
+        </id>
+
+        <attribute>
+            <name>name</name>
+            <type>String</type>
+            <null_value></null_value>
+        </attribute>
+    </structure>
+</dictionary>
+
+<dictionary>
+    <name>ssp_user</name>
+
+    <source>
+        <mysql>
+            <replica>
+                <host>db_mysql</host>
+                <priority>1</priority>
+            </replica>
+            <port>3306</port>
+            <user>project</user>
+            <password>alei4ubweiptcuyner</password>
+            <db>project</db>
+            <table>user</table>
+        </mysql>
+    </source>
+
+    <lifetime>
+        <min>300</min>
+        <max>360</max>
+    </lifetime>
+
+    <layout>
+        <flat />
+    </layout>
+
+    <structure>
+        <id>
+            <name>id</name>
+        </id>
+
+        <attribute>
+            <name>username</name>
+            <type>String</type>
+            <null_value></null_value>
+        </attribute>
+    </structure>
+</dictionary>
+
+<dictionary>
+    <name>ssp_geo_city</name>
+
+    <source>
+        <mysql>
+            <replica>
+                <host>db_mysql</host>
+                <priority>1</priority>
+            </replica>
+            <port>3306</port>
+            <user>project</user>
+            <password>alei4ubweiptcuyner</password>
+            <db>project</db>
+            <table>geo_city</table>
+        </mysql>
+    </source>
+
+    <lifetime>
+        <min>300</min>
+        <max>360</max>
+    </lifetime>
+
+    <layout>
+        <hashed />
+    </layout>
+
+    <structure>
+        <id>
+            <name>id</name>
+        </id>
+
+        <attribute>
+            <name>name_ru</name>
+            <type>String</type>
+            <null_value></null_value>
+        </attribute>
+        <attribute>
+            <name>name_en</name>
+            <type>String</type>
+            <null_value></null_value>
+        </attribute>
+        <attribute>
+            <name>country_id</name>
+            <type>Int32</type>
+            <null_value>0</null_value>
+        </attribute>
+        <attribute>
+            <name>region_id</name>
+            <type>Int32</type>
+            <null_value>0</null_value>
+        </attribute>
+    </structure>
+</dictionary>
+
+<dictionary>
+    <name>ssp_advertiser</name>
+
+    <advertiser>
+        <mysql>
+            <replica>
+                <host>db_mysql</host>
+                <priority>1</priority>
+            </replica>
+            <port>3306</port>
+            <user>project</user>
+            <password>alei4ubweiptcuyner</password>
+            <db>project</db>
+            <table>user</table>
+        </mysql>
+    </advertiser>
+
+    <lifetime>
+        <min>300</min>
+        <max>360</max>
+    </lifetime>
+
+    <layout>
+        <flat />
+    </layout>
+
+    <structure>
+        <id>
+            <name>id</name>
+        </id>
+
+        <attribute>
+            <name>name</name>
+            <type>String</type>
+            <null_value></null_value>
+        </attribute>
+    </structure>
+</dictionary>
+
+<dictionary>
+    <name>ssp_geo_country</name>
+
+    <source>
+        <mysql>
+            <replica>
+                <host>db_mysql</host>
+                <priority>1</priority>
+            </replica>
+            <port>3306</port>
+            <user>project</user>
+            <password>alei4ubweiptcuyner</password>
+            <db>project</db>
+            <table>geo_country</table>
+        </mysql>
+    </source>
+
+    <lifetime>
+        <min>300</min>
+        <max>360</max>
+    </lifetime>
+
+    <layout>
+        <flat />
+    </layout>
+
+    <structure>
+        <id>
+            <name>id</name>
+        </id>
+
+        <attribute>
+            <name>name_ru</name>
+            <type>String</type>
+            <null_value></null_value>
+        </attribute>
+        <attribute>
+            <name>name_en</name>
+            <type>String</type>
+            <null_value></null_value>
+        </attribute>
+        <attribute>
+            <name>iso</name>
+            <type>String</type>
+            <null_value></null_value>
+        </attribute>
+    </structure>
+</dictionary>
+
+<dictionary>
+    <name>ssp_offer</name>
+
+    <offer>
+        <mysql>
+            <replica>
+                <host>db_mysql</host>
+                <priority>1</priority>
+            </replica>
+            <port>3306</port>
+            <user>project</user>
+            <password>alei4ubweiptcuyner</password>
+            <db>project</db>
+            <table>user</table>
+        </mysql>
+    </offer>
+
+    <lifetime>
+        <min>300</min>
+        <max>360</max>
+    </lifetime>
+
+    <layout>
+        <flat />
+    </layout>
+
+    <structure>
+        <id>
+            <name>id</name>
+        </id>
+
+        <attribute>
+            <name>name</name>
+            <type>String</type>
+            <null_value></null_value>
+        </attribute>
+    </structure>
+</dictionary>
+
+</dictionaries>
+

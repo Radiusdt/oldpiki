@@ -1,0 +1,48 @@
+<dictionary>
+    <name>{DB:prefix}geo_region</name>
+
+    <source>
+        <mysql>
+            <replica>
+                <host>{DB:host}</host>
+                <priority>1</priority>
+            </replica>
+            <port>{DB:port}</port>
+            <user>{DB:username}</user>
+            <password>{DB:password}</password>
+            <db>{DB:database}</db>
+            <table>geo_region</table>
+        </mysql>
+    </source>
+
+    <lifetime>
+        <min>300</min>
+        <max>360</max>
+    </lifetime>
+
+    <layout>
+        <hashed />
+    </layout>
+
+    <structure>
+        <id>
+            <name>id</name>
+        </id>
+
+        <attribute>
+            <name>name_ru</name>
+            <type>String</type>
+            <null_value></null_value>
+        </attribute>
+        <attribute>
+            <name>name_en</name>
+            <type>String</type>
+            <null_value></null_value>
+        </attribute>
+        <attribute>
+            <name>country_id</name>
+            <type>Int32</type>
+            <null_value>0</null_value>
+        </attribute>
+    </structure>
+</dictionary>

@@ -1,0 +1,103 @@
+{
+    "name": "yiisoft/yii2-app-basic",
+    "description": "Yii 2 Basic Project Template",
+    "keywords": [
+        "yii2",
+        "framework",
+        "basic",
+        "project template"
+    ],
+    "homepage": "http://www.yiiframework.com/",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "http://www.yiiframework.com/wiki/",
+        "irc": "irc://irc.freenode.net/yii",
+        "source": "https://github.com/yiisoft/yii2"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/brntsrs/yii2-clickhouse.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/raid3r/yii2-sypexgeo.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/brntsrs/google-play-scraper.git"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/brntsrs/bernard.git"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "~8.1",
+        "yiisoft/yii2": "~2.0.45",
+        "yiisoft/yii2-bootstrap5": "~2.0.2",
+        "ext-json": "*",
+        "ext-redis": "*",
+        "ext-zip": "*",
+        "ext-curl": "*",
+        "ext-http": "*",
+        "ext-dom": "*",
+        "ext-fileinfo": "*",
+        "ext-gd": "*",
+        "guzzlehttp/guzzle": "^7.8",
+        "bernard/bernard": "@dev",
+        "bazilio/yii2-stubs-generator": "~1",
+        "yiisoft/yii2-queue": "^2.3",
+        "trntv/cheatsheet": "^0.1.0",
+        "yiithings/yii2-dotenv": "*",
+        "http-interop/http-factory-guzzle": "^1.2",
+        "php-http/curl-client": "^2.3",
+        "kak/clickhouse": "@dev",
+        "brntsrs/yii2-clickhouse": "@dev",
+        "bernard/drivers": "@dev",
+        "yiisoft/yii2-redis": "^2.0",
+        "lucidtaz/yii2-scssphp": "^0.3.1",
+        "mobiledetect/mobiledetectlib": "^4.8",
+        "ua-parser/uap-php": "^3.9",
+        "geoip2/geoip2": "^3.1",
+        "ip2location/ip2location-php": "^9.7",
+        "hostbrook/sypex-geo": "^1.7",
+        "yii2tech/ar-softdelete": "^1.0",
+        "fakerphp/faker": "^1.24",
+        "moonlandsoft/yii2-phpexcel": "^2.0",
+        "sendpulse/rest-api": "^2.0",
+        "piwik/device-detector": "^6.4",
+        "florianv/exchanger": "^2.8",
+      "ext-bcmath": "*"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "common\\tests\\": [
+                "common/tests/",
+                "common/tests/_support"
+            ],
+            "core\\tests\\": [
+                "core/tests/",
+                "core/tests/_support"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "php-http/discovery": true
+        },
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        }
+    }
+}

@@ -1,0 +1,38 @@
+<dictionary>
+    <name>{DB:prefix}operator</name>
+
+    <source>
+        <mysql>
+            <replica>
+                <host>{DB:host}</host>
+                <priority>1</priority>
+            </replica>
+            <port>{DB:port}</port>
+            <user>{DB:username}</user>
+            <password>{DB:password}</password>
+            <db>{DB:database}</db>
+            <table>mobile_operator</table>
+        </mysql>
+    </source>
+
+    <lifetime>
+        <min>300</min>
+        <max>360</max>
+    </lifetime>
+
+    <layout>
+        <flat />
+    </layout>
+
+    <structure>
+        <id>
+            <name>id</name>
+        </id>
+
+        <attribute>
+            <name>name</name>
+            <type>String</type>
+            <null_value></null_value>
+        </attribute>
+    </structure>
+</dictionary>
