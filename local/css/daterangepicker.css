@@ -1,0 +1,33 @@
+.title-inline {
+    display: inline;
+    margin-right: 250px;
+}
+
+.kv-drp-dropdown .kv-clear {
+    font-size: 2rem;
+    right: 0.7rem;
+    line-height: 2.8rem;
+}
+
+.kv-drp-dropdown .caret {
+    vertical-align: -0.2em;
+    display: none;
+}
+
+.glyphicon-calendar:before {
+    vertical-align: -0.5em;
+}
+
+.kv-drp-dropdown .range-value {
+    padding-left: 3rem;
+    padding-right: 4rem;
+    cursor: pointer;
+}
+
+.kv-drp-dropdown .left-ind {
+    top: 2px;
+}
+
+.kv-drp-dropdown .kv-clear {
+    top: 0;
+}

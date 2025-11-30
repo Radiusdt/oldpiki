@@ -1,0 +1,7 @@
+.link-vertical, .chart-vertical {
+    display: inline-block;
+}
+
+.left-offset {
+    left: -37px!important;
+}

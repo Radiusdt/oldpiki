@@ -1,0 +1,147 @@
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/materialicons/v99/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.video-background {
+  width: 100%;
+  background-color: #000;
+  z-index: 1;
+  position: relative;
+  max-width: 720px;
+  margin: auto;
+}
+
+.video-background video {
+  max-width: 100%;
+  width: 100%;
+}
+
+.video-background .video-shadow {
+  background: linear-gradient(0deg, #202124 0, transparent 56%);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+
+.video-background .video-button {
+  bottom: 50%;
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, 50%);
+  z-index: 2;
+}
+
+.video-background .video-button button {
+  border: 0;
+  box-shadow: none;
+  min-height: 40px;
+  min-width: 40px;
+  text-transform: none;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0 26px;
+  font-family: Google Sans, Roboto, Arial, sans-serif;
+  line-height: 1.25rem;
+  font-size: .875rem;
+  letter-spacing: .0178571429em;
+  font-weight: 500;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .54);
+  border-radius: 48px;
+  color: #fff;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.with-video .app-comp__mobile-info-item,
+.with-video .app-comp__ad-status,
+.with-video .app-comp__info-subtitle,
+.with-video .app-comp__info-title {
+  background: rgb(255, 255, 255, 0.3);
+  color: #000 !important;
+}
+.with-video .app-comp__mobile-info-item span {
+  color: #000 !important;
+}
+
+.with-video {
+  position: initial !important;
+}
+
+.with-video .app-comp__logo, .with-video .app-comp__main-info {
+  z-index: 2;
+}
+
+.app-comp__mobile-info {
+  margin-left: -10px;
+}
+
+.app-comp__ad-status {
+  padding: 0;
+  margin-top: 5px;
+}
+
+.with-video .app-comp__info-subtitle,
+.with-video .app-comp__info-title  {
+  padding-left: 15px;
+}
+.content_comments_resWrapper {
+  margin-left: 20px;
+  background-color: #f8f9fa;
+  padding: 8px 12px;
+  margin-top: 10px;
+}
+
+.comment-screenshots {
+  max-height: 100px;
+  display: flex;
+}
+.comment-screenshots .screenshot {
+  max-width: 50px;
+  cursor: pointer;
+}
+
+.comment-screenshots .screenshot img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.comment-screenshots .preview {
+  position: fixed;
+  background: #fff;
+  width: 91%;
+  border: solid 1px #eee;
+  padding: 20px;
+  margin-left: -60px;
+  margin-top: -104px;
+  text-align: center;
+  display: none;
+  cursor: pointer;
+  z-index: 1;
+}
