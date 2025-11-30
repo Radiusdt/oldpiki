@@ -1,0 +1,1 @@
+docker-compose exec web_php bash
